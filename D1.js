@@ -15,8 +15,8 @@ REGOLE
  numeri: possono contenere solo numeri e non hanno bisogno dell'apostrofo es. let dog = 1
  stringhe: possono contenere sia numeri che testo e il contenuto va inserito all'interno di apostrofo. Es.  let dog = "Fido"
  booleani: possono avere solo due valori: true o false 
- null: quando una variabile non ha proprio un valore. Es. 
- undefined: quando una variabile viene dichiarata ma senza valore. Es. let dog 
+ null: quando una variabile non ha proprio un valore.  
+ undefined: quando una variabile viene dichiarata ma non gli viene assegnato un valore. 
 */
 
 /* ESERCIZIO 2
@@ -24,7 +24,10 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let name = "Sarah" 
+ let firstName = "Sarah" 
+ console.log('il valore della variabile è', firstName)
+ const lastName = "Guarneri"
+ console.log(lastName)
 
 
 /* ESERCIZIO 3
@@ -36,13 +39,16 @@ let name = "Sarah"
  let number2 = 20
  let number3 = number1 + number2
 
+//  oppure
+ let sum = 12 + 20
+
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let x = 12
+ let x = 12
 
 
 /* ESERCIZIO 5
@@ -51,7 +57,9 @@ let x = 12
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-name = "Guarneri"
+ firstName = "Guarneri"
+ // lastName = "Sarah" risulta errore
+
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
@@ -59,7 +67,9 @@ name = "Guarneri"
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-console.log(x - 4)
+ console.log('il risultato della sottrazione è', x - 4)
+ y = 4
+ console.log(x - y)
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -68,12 +78,13 @@ console.log(x - 4)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let name1 = "john"
-let name2 = "John"
-console.log(name1 === name2)
+ let name1 = "john"
+ let name2 = "John"
+ console.log(name1 === name2)
+ console.log(name1 !== name2)
 
-name1 = "John"
-console.log(name1 === name2)
+ console.log(name1.toLowerCase === name2.toLowerCase)
+//  stiamo comparando 'john' con 'john'
 
-name1 = "john"
-console.log(name1 !== name2)
+
+
